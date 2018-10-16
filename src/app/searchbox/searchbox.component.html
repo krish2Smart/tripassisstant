@@ -1,0 +1,6 @@
+<div>
+  <input type="text" class="input-field" [(ngModel)]="input"/>
+  <app-speech-recogniser 
+    *ngIf="microphone"
+    (onChangeInput)="onChangeInput($event)"></app-speech-recogniser>
+</div>
